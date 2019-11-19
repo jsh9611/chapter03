@@ -10,13 +10,12 @@ public class Goods {
 	private int countSold;
 	
 	public Goods(String name, int price, int countStock, int countSold) {
-		Goods camera = new Goods();
-		
 		this.name = name;
 		this.price = price;
 		this.countStock = countStock;
 		this.countSold = countSold;        // 초기화
 											// 굳이 파라미터 4개를 넣어서 만들었으니 컴파일러가 기본생성자 넣지않음.
+		Goods.count += 1;
 	}
 	
 	public String getName() {
@@ -71,10 +70,11 @@ public class Goods {
 	}
 	
 	
-	public int calDiscountPrice(double discountPrice) {
-		int discountPrice = (int)(price * discountPrice);
-		return 0;
+	public int calcDiscountPrice(double discountRate) {
+		int discountPrice = (int)(price * discountRate);
+		return discountPrice;
 	}
+	
 	
 	// return 값과 매개변수(parameter)가 없는 메소드
 	public void showInfo() {

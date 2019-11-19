@@ -26,8 +26,9 @@ public class GoodsApp {
 		camera.showInfo(); // 반환타입이 없기 때문에 값을 받을 수 없다.
 		
 		
-		int discountPrice = camera.calDiscountPrice(0.5);  // float 일땐 0.5f
+		int discountPrice = camera.calcDiscountPrice(0.5);  // float 일땐 0.5f
 		System.out.println(discountPrice);
+
 		
 //		Goods camera2 = new Goods();
 //		Goods camera3 = new Goods();		

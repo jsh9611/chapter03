@@ -7,9 +7,7 @@ public class Song {
 	private String composer;
 	private int year;
 	private int track;
-	// generate getter and setter(source에 있음)
-	
-	
+
 	public String getTitle() {
 		return title;
 	}
@@ -46,28 +44,30 @@ public class Song {
 	public void setTrack(int track) {
 		this.track = track;
 	}
-	private int track;
-
+	
 	public void show() {
-		if(album == null) {
-			album = "X";
-		}
-		if(composer == null) {
-			composer = "X";
-		}
 		if(artist == null) {
-			artist = "X";
+			artist = "없음";
 		}
+		
 		if(title == null) {
-			title = "X";
+			title = "없음";
+		}
+		
+		if(album == null) {
+			album = "없음";
+		}
+
+		if(composer == null) {
+			composer = "없음";
 		}
 		
 		System.out.println(
-				artist + " " + 
-				title + " (" + 
-				album + ", " + 
-				year + ", " + 
-				track + " 번 track, " + 
-				composer + " 작곡) ");
+			artist   + " " + 
+			title    + " ( " + 
+			album    + ", " + 
+			year     + ", " + 
+			track    + "번 track, " +
+			composer + "작곡 )");
 	}
 }
