@@ -7,6 +7,10 @@ public class Person {
 	int age;
 	private int weight;
 	
+	public Person( ) {
+		System.out.println("생성자 생성될때 Person() 호출");
+	}
+	
 	public void info() {
 		weight = 70;
 	}

@@ -25,7 +25,7 @@ public class StaticMethodTest {
 		
 		int n3 = 5678;
 		String sn2 = String.valueOf(n3);
-
+		
 		
 		System.out.println(Math.PI);
 	}

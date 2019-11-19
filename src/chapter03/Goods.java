@@ -22,9 +22,9 @@ public class Goods {
 		return name;
 	}
 	
-//	public Goods() {
-//		Goods.count += 1;  //count += 1; 도 가능. 같은 클래스 안에선 좀 봐준다.
-//	}
+	public Goods() {
+		Goods.count += 1;  //count += 1; 도 가능. 같은 클래스 안에선 좀 봐준다.
+	}
 	
 	public static void showCount() {
 		System.out.println(count); //내부에서는 생략해서 부를수있다. Goods.count
