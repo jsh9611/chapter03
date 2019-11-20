@@ -1,11 +1,9 @@
 package chapter03;
 
-import paint.Point;
+public class WatchTV {
 
-public  class WatchTV {
-    public static void main( String[] args ) {
-       TV tv = new TV( 7, 20, false);  	
-        
+	public static void main(String[] args) {
+		TV tv = new TV(7, 20, false);  	
         tv.status();	
         
         tv.power( true );
@@ -24,8 +22,7 @@ public  class WatchTV {
         tv.status();
 
         tv.power( false );
-        tv.status();      		          
-    	
-    	}
-    
-    }
+        tv.status();		
+	}
+
+}

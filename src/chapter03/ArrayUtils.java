@@ -24,6 +24,21 @@ public class ArrayUtils {
 		
 		return result;
 	}
+
+	public static int[] concat(int[] a3, int[] a4) {
+		int length3 = a3.length;
+		int length4 = a4.length;
+		int length5 = length3 + length4;
+		
+		int[] result = new int[length5];
+		for(int i = 0; i < length3; i++) {
+			result[i] = (int)a3[i];
+		}
+		for(int i = 0; i < length4; i++) {
+			result[i+length3] = a4[i];
+		}		
+		return result;
+	}
 	
 }	
 /*	
