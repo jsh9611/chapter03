@@ -1,13 +1,13 @@
 package paint;
 
-public class Point {
+public class Point implements Drawable{
 	private int x;
 	private int y;
 	public int getX() {
 		return x;
 	}
 	public Point() {
-		
+		System.out.println("Point() 호출");
 	}
 	public Point(int x, int y) {   // int (valueX, int valueY)
 	//	x = x; 이러면 자기꺼에 자기꺼 넣는거되어버림. this가 객체라는거
@@ -37,4 +37,9 @@ public class Point {
 			System.out.println("점[" + x + ", " + y + "]을 지웠습니다.");
 		}
 	}
-}
+
+	@Override
+	public void draw() {
+		show();
+	}
+}	
