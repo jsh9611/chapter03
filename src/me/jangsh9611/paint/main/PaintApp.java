@@ -1,4 +1,13 @@
-package paint;
+package me.jangsh9611.paint.main;
+
+import me.jangsh9611.paint.i.Drawable;
+import me.jangsh9611.paint.point.ColorPoint;
+import me.jangsh9611.paint.point.Point;
+import me.jangsh9611.paint.shape.Circle;
+import me.jangsh9611.paint.shape.Rect;
+import me.jangsh9611.paint.shape.Shape;
+import me.jangsh9611.paint.shape.Triangle;
+import me.jangsh9611.paint.text.GraphicText;
 
 public class PaintApp {
 
@@ -49,6 +58,27 @@ public class PaintApp {
 		draw(new Rect());
 		draw(new Circle());
 		draw(new GraphicText("Hello World"));
+		
+		// 5. instanceof 연산자 테스트
+		// 	  상속관계에 있는 클래스들만 가능하다(부모거나 자식)
+		Shape s = new Rect();
+		System.out.println(s instanceof Object);
+		System.out.println(s instanceof Shape);
+		System.out.println(s instanceof Rect);
+		System.out.println(s instanceof Triangle);		
+		System.out.println(s instanceof Drawable);	
+		
+		Rect r = new Rect();
+		System.out.println(r instanceof Object);
+		System.out.println(r instanceof Shape);
+		System.out.println(r instanceof Rect);
+		// System.out.println(r instanceof Triangle);
+		
+		// 인터페이스의 경우 구현관계는 부모자식 상관없이 연산이 가능하다.
+		System.out.println(r instanceof Drawable);
+		//System.out.println(r instanceof String); 불가능
+		//System.out.println(r instanceof List); 가능
+		//									구현되잇는지안되어잇는지
 	}
 
 	public static void draw(Drawable drawable) {

@@ -1,4 +1,6 @@
-package paint;
+package me.jangsh9611.paint.text;
+
+import me.jangsh9611.paint.i.Drawable;
 
 public class GraphicText implements Drawable {
 	private String text;

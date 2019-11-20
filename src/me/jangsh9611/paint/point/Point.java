@@ -1,4 +1,6 @@
-package paint;
+package me.jangsh9611.paint.point;
+
+import me.jangsh9611.paint.i.Drawable;
 
 public class Point implements Drawable{
 	private int x;

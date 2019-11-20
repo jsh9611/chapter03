@@ -1,4 +1,4 @@
-package paint;
+package me.jangsh9611.paint.point;
 
 public class ColorPoint extends Point {
 	private String color;

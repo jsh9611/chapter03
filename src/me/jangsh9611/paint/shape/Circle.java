@@ -1,4 +1,4 @@
-package paint;
+package me.jangsh9611.paint.shape;
 
 public class Circle extends Shape{
 	private int x;
