@@ -4,6 +4,12 @@ public class WatchTV {
 
 	public static void main(String[] args) {
 		TV tv = new TV(7, 20, false);  	
+		
+//		int channel = tv.getChannel();
+//		System.out.println(channel);
+//		tv.showInfo();
+		
+		
         tv.status();	
         
         tv.power( true );
@@ -23,6 +29,7 @@ public class WatchTV {
 
         tv.power( false );
         tv.status();		
+        
 	}
 
 }
